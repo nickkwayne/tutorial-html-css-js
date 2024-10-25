@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IFFinance</title>
+        <link rel="stylesheet" href="./css/styles.css">
+        <script>
+            //var var1 = "pouco utilizado" // var pode ser redeclarada e gerar problemas
+            // let var2 = "muito utilizado" // let não pode ser redeclarada
+            // var2 = "outro valor"
+            const nome = "Renan" // const não pode ser redeclarada e nem ter seu valor alterado
+            const sobreNome = "Cavichi"
+            //const nomeCompleto = nome + " " + sobreNome // concatenar
+
+            const campoEscolhido = 'altura'
+
+            function nomeCompleto(nome, sobreNome) {
+                return `${nome} ${sobreNome}`
+            }
+
+            const nCompleto = function (nome, sobreNome){
+                return `${nome} ${sobreNome}`
+            }
+
+            const nmCompleto = (nome, sobreNome) => {
+                return `${nome} ${sobreNome}`
+            }
+
+            const user = { // objeto
+                nome: "Paulo",
+                sobreNome: "da Silva",
+                email: "paulo@gmail.com",
+                altura: 1.75,
+                id: 10,
+                'Nome Completo': 'Paulo da Silva',
+                idAdmins: [4, 20, 30, 33],
+                endereco: {
+                    rua: "Rua dos Bobos",
+                    numero: 0
+                },
+                nomeCompleto: (nome, sobreNome) => {
+                    return `${nome} ${sobreNome}`
+                },
+                nCompleto: nomeCompleto
+            }
+
+            const idAdmins = [1, 5, 10, 80, {rua: 'Dos Bodos', numero: 0}]
+
+            console.log(`Olá ${teste(user.nome, user.sobreNome)}, seja bem-vindo! ${idAdmins[4].numoro}`)
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="wrapper">
+                <div id="logo">
+                    <img src="img/finance-logo.svg" alt="Logo IF Finance">
+                    <h1><span>IF</span>Finance</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a class="active" href="./index.html">Home</a></li>
+                        <li><a href="./quem-somos.html">Quem Somos</a></li>
+                        <li><a href="./bolsas.html">Bolsas</a></li>
+                        <li><a href="./destaques.html">Destaques</a></li>
+                        <li><a href="./contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="wrapper">
+                <h1>Home</h1>
+            </div>
+        </main>
+    </body>
+</html>
